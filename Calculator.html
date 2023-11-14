@@ -1,0 +1,60 @@
+<html>
+<head>
+    <script>
+        function add()
+        {
+            var n1,n2,add;
+            n1=parseInt(document.getElementById("first").value);
+            n2=parseInt(document.getElementById("second").value);
+            add=(n1,n2)=>(n1+n2);
+            document.getElementById("result").value=add(n1,n2);
+        }
+        function sub()
+        {
+            var n1,n2,sub;
+            n1=parseInt(document.getElementById("first").value);
+            n2=parseInt(document.getElementById("second").value);
+            sub=(n1,n2)=>(n1-n2);
+            document.getElementById("result").value=sub(n1,n2);
+        }
+        function mul()
+        {
+            var n1,n2,mul;
+            n1=parseInt(document.getElementById("first").value);
+            n2=parseInt(document.getElementById("second").value);
+            mul=(n1,n2)=>(n1*n2);
+            document.getElementById("result").value=mul(n1,n2);
+        }
+        function div()
+        {
+            var n1,n2,div;
+            n1=parseInt(document.getElementById("first").value);
+            n2=parseInt(document.getElementById("second").value);
+            div=(n1,n2)=>(n1/n2);
+            document.getElementById("result").value=div(n1,n2);
+        }
+        function mod()
+        {
+            var n1,n2,mod;
+            n1=parseInt(document.getElementById("first").value);
+            n2=parseInt(document.getElementById("second").value);
+            mod=(n1,n2)=>(n1%n2);
+            document.getElementById("result").value=mod(n1,n2);
+        }
+        </script>
+</head>
+<body>
+    <center>
+    <fieldset >
+        <p>Enter first number:<input type="number" id="first"></p>
+        <p>Enter second number:<input type="number" id="second"></p>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+        <button onclick="mul()">*</button>
+        <button onclick="div()">/</button>
+        <button onclick="mod()">%</button>
+        <p>Result:<input type="number" id="result"></p>
+    </fieldset>
+</center>
+</body>
+</html>
